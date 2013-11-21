@@ -1,0 +1,25 @@
+<html>
+<body>
+<form action="subearchivo.php" method="post" enctype="multipart/form-data"> 
+   	 <b>Campo de tipo texto:</b> 
+   	 <br> 
+   	Semestre <input type="text" name="semestre" size="20" maxlength="2"> 
+   	Carrera <select name="carrera">
+   	 	<option>MKT</option>
+   	 	<option>LAG</option>
+   	 	<option>ITI</option>
+   	 	<option>ITEM</option>
+   	 	<option>ITMA</option>
+   	 	<option>ISTI</option>
+   	 </select>
+   	 <input type="hidden" name="MAX_FILE_SIZE" value="200000"> 
+   	 <br> 
+   	 <br> 
+   	 <b>Seleccionar kardex general de alumno: </b> 
+   	 <br> 
+   	 <input name="archivo" type="file"> 
+   	 <br> 
+   	 <input type="submit" value="Enviar"> 
+</form>
+</body>
+</html>

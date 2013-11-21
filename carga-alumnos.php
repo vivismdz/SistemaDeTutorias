@@ -100,7 +100,7 @@
                 <h3>Kardex</h3>
         </div>
             <div class="row">
-                    <form method="post" action="subearchivo.php">
+                    <form method="post" action="subearchivo.php"   enctype="multipart/form-data">
                         <label for="" >Kardex Anterior</label>
                           <input id="" type="file" name="archivo"> <button type="submit">Enviar</button>
                         
@@ -130,23 +130,35 @@
       
         <!--TABLA DE ALUMNOS CON -->
         <div class="testimonials-title">
-                <h3>Tutelados</h3>
+                
                 <?php
                 include("conexion.php");
-                echo "<table width='100%' border='1' cellpadding='0' cellspacing='0' aling='center'>";
+                echo "<table width='100%' border='1' cellpadding='0' cellspacing='0' aling='center'>
+                 <td  height='42' colspan='4' align='center' valign='middle' ><h3>Tutelados</h3></td>
+                  <tr>
+                  <td >Nombre</td>
+                  <td >1 Contacto</td>
+                  <td >2 Contacto</td>
+                  <td >3 Contacto</td>
+                  </tr>";
 
-                $consulta =mysql_query("SELECT * FROM alumnos"); 
+                $consulta =mysql_query("SELECT * FROM alumno"); 
+                if($consulta){
                  while($row=mysql_fetch_assoc($consulta))
                  {
+                    $matricula=$row['matricula'];
                    echo"
                    <tr>
-                   <td>$row[matricula]</td>
-                   <td>$row[nombre]</td>
+                   <td>".utf8_encode($row['nombre'])."</td>
+                   <td><input type='button' value='Realizar contacto'><input type='button' value='Imprimir'></td>
+                   <td></td>
+                   <td></td>
+
                    </tr>
                   ";
-                  
-                 }
-                      echo "  </table> ";                 
+                  }
+                  }
+                echo "  </table> ";                 
 
                ?>
                
