@@ -107,9 +107,9 @@
                     </form>
             </div>
             <div class="row">
-                    <form method="post" action="">
+                    <form method="post" action="subirkardex1.php" enctype="multipart/form-data">
                         <label for="" >Kardex 1</label>
-                          <input id="" type="file" name=""> <button type="submit">Enviar</button>
+                          <input id="" type="file" name="kardex1"> <button type="submit">Enviar</button>
                         
                     </form>
             </div>
@@ -126,13 +126,29 @@
                           <input id="" type="file" name=""> <button type="submit">Enviar</button>
                         
                     </form>
+                    <form action="periodo.php" method="post">
+                   <?php
+                    include("conexion.php");
+                   $cons =mysql_query("SELECT * FROM semestre_anterior"); 
+              
+                 $rw=mysql_fetch_assoc($cons);
+               
+                   if($rw['Semestre_Anterior']=="")
+                   {
+                    echo "Ingrese el periodo anterior:<input type'text' name='periodo'>";
+                    echo  "<input type='submit' value='Aceptar'>";
+                }
+                    ?>
+                    </form>
+          
             </div>
-      
+          <br>
+     
         <!--TABLA DE ALUMNOS CON -->
         <div class="testimonials-title">
                 
                 <?php
-                include("conexion.php");
+               
                 echo "<table width='100%' border='1' cellpadding='0' cellspacing='0' aling='center'>
                  <td  height='42' colspan='4' align='center' valign='middle' ><h3>Tutelados</h3></td>
                   <tr>
@@ -150,7 +166,7 @@
                    echo"
                    <tr>
                    <td>".utf8_encode($row['nombre'])."</td>
-                   <td><input type='button' value='Realizar contacto'><input type='button' value='Imprimir'></td>
+                   <td><a href='formato1prueba.php?m=$matricula'>Ralizar primer contacto</a><input type='button' value='Imprimir'></td>
                    <td></td>
                    <td></td>
 
