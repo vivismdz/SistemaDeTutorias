@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,21 +57,7 @@
                                     <li class="current-page">
                                         <a href="index.html"><i class="icon-home"></i><br />Inicio</a>
                                     </li>
-                                    <!--
-                                    <li>
-                                        <a href="portfolio.html"><i class="icon-camera"></i><br />Portfolio</a>
-                                    </li>
-                                    -->
-                                    <!--
-                                    <li>
-                                        <a href="#"><i class="icon-comments"></i><br />Blog</a>
-                                    </li>
-                                    -->
-                                    <!--
-                                    <li>
-                                        <a href="services.html"><i class="icon-tasks"></i><br />Services</a>
-                                    </li>
-                                    -->
+                               
                                     <li>
                                         <a href="about.html"><i class="icon-user"></i><br />Acerca de</a>
                                     </li>
@@ -87,41 +72,9 @@
             </div>
         </div>
 
-        <!-- Slider 
-        <div class="slider">
-            <div class="container">
-                <div class="row">
-                    <div class="span10 offset1">
-                        <div class="flexslider">
-                            <ul class="slides">
-                                <li data-thumb="assets/img/slider/1.jpg">
-                                    <img src="assets/img/slider/1.jpg">
-                                    <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur.</p>
-                                </li>
-                                <li data-thumb="assets/img/slider/2.jpg">
-                                    <img src="assets/img/slider/2.jpg">
-                                    <p class="flex-caption">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                </li>
-                                <li data-thumb="assets/img/slider/5.jpg">
-                                    <img src="assets/img/slider/5.jpg">
-                                    <p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur.</p>
-                                </li>
-                                <li data-thumb="assets/img/slider/6.jpg">
-                                    <img src="assets/img/slider/6.jpg">
-                                    <p class="flex-caption">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                                </li
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        /Slider -->
-
-
         <!-- Services -->
          <div class="testimonials-title">
-                <h3>Inicio de Sesion</h3>
+                <h3>Registro</h3>
         </div>
       
         <div class="what-we-do container">
@@ -130,14 +83,16 @@
                      <div class="contact-us container">
                         <div class="row">
                             <div class="contact-form span12">
-                                <p>Inicio de Sesion</p>
+                                <p>Ingrese sus datos</p>
                                 <form method="post" action="assets/sendmail.php">
-                                    <label for="name" class="nameLabel">Usuario</label>
-                                      <input id="name" type="text" name="name" placeholder="Ingresa tu usuario..">
-                                    <label for="email" class="emailLabel">Contrasena</label>
-                                      <input id="email" type="text" name="email" placeholder="Ingresa tu contrasena...">
+                                    <label for="name" class="nameLabel">Nombre</label>
+                                      <input id="name" type="text" name="name" placeholder="Ingrese su nombre" required>
+                                    <label for="apellidos" class="emailLabel">Apellidos</label>
+                                      <input id="apellidos" type="text" name="email" placeholder="Ingrese sus Apellidos" required>
+                                      <label for="email" class="emailLabel">Email</label>
+                                      <input id="email" type="text" name="email" placeholder="Ingrese su Email @upslp.edu.mx" required>
                                     
-                                    <button type="submit">Enviar</button>
+                                    <button type="submit">Enviar</button><br><button type="submit">Registrarse</button>
                                 </form>
                             </div>
                             <!--
@@ -278,7 +233,7 @@
         <!-- Footer -->
         <footer>
             <div class="container">
-                <div class="row">
+               <!-- <div class="row">
                     <div class="widget span4">
                         <h4>Acerca de Nosotros</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
@@ -295,7 +250,7 @@
                         <p><i class="icon-phone"></i> Phone: </p>
                         <p><i class="icon-envelope-alt"></i> Email: <a href="">contact@sistematutoriasupslp.edu.mx</a></p>
                     </div>
-                </div>
+                </div>-->
                 <div class="footer-border"></div>
                 <div class="row">
                     <div class="copyright span4">
@@ -326,4 +281,3 @@
     </body>
 
 </html>
-
