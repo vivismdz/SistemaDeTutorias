@@ -95,10 +95,34 @@
                 </div>
             </div>
 
-        <div class="contact-us container">
-            <div class="row">
-                <div class="contact-form span12">
+            <br>
+            
+            <div class="span10">
                     <form method="post" action="">
+                        <label>Carrera:</label>
+                                <select class="span2" name="">
+                                    <option>ITI</option>
+                                    <option>ITEM</option>
+                                    <option>ISTI</option>
+                                    <option>ITMA</option>
+                                    <option>LAG</option>
+                                    <option>MKT</option>
+                                </select>
+                          <label>Semestre:</label>
+                                <select class="span2" name="">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+
+                                </select>
+
+                        <label>Semestre</label>
                         <table class="table table-bordered">
                         <tr class="active">
                             <td><h6>Nombre de La materia Cursada<br>en el semestre anterior</h6></td>
@@ -395,7 +419,24 @@
 
                     <h4> III. Expectativas (solo para estudiantes de 5 a 9 semestre)</h4><br>
                      <label for="" class="nameLabel">a. Los semestres cursados, te permiten confirmar tus espectativas sobre la carrera?</label>
+
+                            <label class="radio">
+                               Si<input type="radio" name="a" id="" value="Si" checked>
+                             
+                            </label>
+                            <label class="radio">
+                              No<input type="radio" name="a" id="" value="no" >
+                              
+                            </label>
+                            <label class="radio">
+                              Parcialmente<input type="radio" name="a" id="" value="parcialmente" >
+                              
+                            </label>
                            <textarea id="" name="" placeholder="si, no, parcialmente por que?"></textarea>
+
+                     <label for="" class="nameLabel">b. Cuales consideras que son actualmente algunos de los obstaculos de tus estudios?</label>
+                           <textarea id="" name="" placeholder=""></textarea>
+
                    <table class="table table-bordered">
                         <tr>
                             <td><h5>Plazo</h5></td>
@@ -422,21 +463,20 @@
                      
                     </form>
                 </div>
-                
-            </div>
-        </div>
+              
            
-
-        <!-- Site Description -->
-        <div class="presentation container">
-            <h2><span class="violet">Sistema de Tutorías</span>.</h2>
-            <p>Universidad Politécnica de San Luis Potosí</p>
+        <div class="row">
+            <!-- Site Description -->
+           
         </div>
-
        <br><br>
         <!-- Footer -->
         <footer>
             <div class="container">
+                <div class="presentation container">
+                    <h2><span class="violet">Sistema de Tutorías</span>.</h2>
+                    <p>Universidad Politécnica de San Luis Potosí</p>
+                </div>
              
                 <div class="footer-border"></div>
                 <div class="row">
